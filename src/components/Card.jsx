@@ -20,7 +20,7 @@ function Card({ selectedRegion, inpValue, data, status }) {
     : data;
 
   return (
-    <div className="">
+    <div className="bg-purple-50">
       <div
         className={`${
           selectedRegion || status  ? "hidden" : "flex"
@@ -33,7 +33,7 @@ function Card({ selectedRegion, inpValue, data, status }) {
             className="object-cover object-center w-full rounded-md h-72 dark:bg-gray-500"
           />
           <div className="mt-6 mb-2 mx-4">
-            <span className="block text-xs font-medium tracking-widest uppercase dark:text-violet-600">
+            <span className="block text-xs font-medium tracking-widest text-violet-600 uppercase dark:text-violet-600">
               {randomItem.nativeName}
             </span>
             <h2 className="text-xl font-semibold tracking-wide">
@@ -50,14 +50,14 @@ function Card({ selectedRegion, inpValue, data, status }) {
           )
           .map((country) => {
             return (
-              <div className="max-w-xs p-6 rounded-md shadow-md dark:bg-gray-900 dark:text-gray-50">
+              <div className="max-w-xs p-6 bg-purple-100 rounded-md shadow-md dark:bg-gray-900 dark:text-gray-50">
                 <img
                   src={country.flag}
                   alt={country.name}
                   className="object-cover object-center w-full rounded-md h-72 dark:bg-gray-500"
                 />
                 <div className="mt-6 mb-2">
-                  <span className="block text-xs font-medium tracking-widest uppercase dark:text-violet-600">
+                  <span className="block text-xs font-medium tracking-widest uppercase text-violet-600 dark:text-violet-600">
                     {country.nativeName}
                   </span>
                   <h2 className="text-xl font-semibold tracking-wide">

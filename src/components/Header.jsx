@@ -12,7 +12,7 @@ function Header({ sidebarStatus, changeRegion, data }) {
   }
 
   return (
-    <header className="p-4 ">
+    <header className="p-4 bg-purple-50 ">
       <div className="container flex items-center justify-between h-16 mx-auto md:justify-center md:space-x-8">
         <Sidebar sidebarStatus={sidebarStatus} />
         <ul className="items-stretch hidden space-x-3 md:flex">
@@ -38,7 +38,7 @@ function Header({ sidebarStatus, changeRegion, data }) {
         >
           <LiaGlobeAmericasSolid
             onClick={() => changeRegion(null)}
-            className="dark:text-violet-600 text-6xl"
+            className="dark:text-violet-600 text-6xl text-purple-400"
           />
         </a>
         <ul className="items-stretch hidden space-x-3 md:flex">

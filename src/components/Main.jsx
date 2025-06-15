@@ -10,7 +10,7 @@ function Main({ selectedRegion, data }) {
 
   return (
     <>
-      <section className="dark:bg-gray-900 dark:text-gray-50">
+      <section className="dark:bg-gray-900 bg-purple-50 dark:text-gray-50">
         { !selectedRegion && <div className="container mx-auto flex flex-col items-center px-4 py-16 text-center md:py-32 md:px-10 lg:px-32 xl:max-w-3xl">
           <h1 className="text-4xl font-bold leading-none sm:text-5xl">
             Quisquam necessita vel
