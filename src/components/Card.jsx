@@ -20,13 +20,13 @@ function Card({ selectedRegion, inpValue, data, status }) {
     : data;
 
   return (
-    <div className="bg-purple-50 dark:bg-gray-800 dark:text-gray-50">
+    <div className="bg-violet-50 dark:bg-gray-800 dark:text-gray-50">
       <div
         className={`${
           selectedRegion || status  ? "hidden" : "flex"
         } justify-center lg:max-w-[85%] m-auto`}
       >
-        <div className="w-fit lg:flex items-center p-6 rounded-md shadow-md dark:bg-gray-900 dark:text-gray-50">
+        <div className="w-fit lg:flex mb-5 items-center p-6 rounded-md shadow-md bg-violet-200 dark:bg-gray-900 dark:text-gray-50">
           <img
             src={randomItem.flag}
             alt=""
@@ -50,7 +50,7 @@ function Card({ selectedRegion, inpValue, data, status }) {
           )
           .map((country) => {
             return (
-              <div className="max-w-xs p-6 bg-purple-100 rounded-md shadow-md dark:bg-gray-900 dark:text-gray-50">
+              <div className="max-w-xs p-6 m-2 bg-violet-200 rounded-md shadow-md dark:bg-gray-900 dark:text-gray-50">
                 <img
                   src={country.flag}
                   alt={country.name}
