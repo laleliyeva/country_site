@@ -12,7 +12,7 @@ function Header({ sidebarStatus, changeRegion, data }) {
   }
 
   return (
-    <header className="p-4 bg-purple-50 ">
+    <header className="p-4 bg-purple-50  dark:bg-gray-900 dark:text-gray-50">
       <div className="container flex items-center justify-between h-16 mx-auto md:justify-center md:space-x-8">
         <Sidebar sidebarStatus={sidebarStatus} />
         <ul className="items-stretch hidden space-x-3 md:flex">
